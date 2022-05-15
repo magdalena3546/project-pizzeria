@@ -15,7 +15,7 @@ class CartProduct {
 
     thisCartProduct.getElements(element);
     thisCartProduct.initAmountWidget(thisCartProduct.dom.amountWidget.addEventListener('updated', function () {
-      thisCartProduct.price = thisCartProduct.amountWidget.value * thisCartProduct.priceSingle;
+      thisCartProduct.price = thisCartProduct.amount * thisCartProduct.priceSingle;
       thisCartProduct.dom.price.innerHTML = thisCartProduct.price;
 
     }));
@@ -62,7 +62,7 @@ class CartProduct {
 
   getData() {
     const thisCartProduct = this;
-    // console.log(thisCartProduct);
+   
     const productSummary = {
       id: thisCartProduct.id,
       name: thisCartProduct.name,
