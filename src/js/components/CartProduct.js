@@ -13,12 +13,13 @@ class CartProduct {
     thisCartProduct.price = menuProduct.price;
     thisCartProduct.params = menuProduct.params;
 
+
     thisCartProduct.getElements(element);
     thisCartProduct.initAmountWidget(thisCartProduct.dom.amountWidget.addEventListener('updated', function () {
-      thisCartProduct.price = thisCartProduct.amount * thisCartProduct.priceSingle;
+      thisCartProduct.price = thisCartProduct.amountWidget.value * thisCartProduct.priceSingle;
       thisCartProduct.dom.price.innerHTML = thisCartProduct.price;
-
     }));
+    console.log(thisCartProduct.amount);
     thisCartProduct.initActions();
   }
   getElements(element) {
@@ -62,11 +63,11 @@ class CartProduct {
 
   getData() {
     const thisCartProduct = this;
-   
+
     const productSummary = {
       id: thisCartProduct.id,
       name: thisCartProduct.name,
-      amount: thisCartProduct.amountWidget.value,
+      amount: thisCartProduct.amount,
       priceSingle: thisCartProduct.priceSingle,
       price: thisCartProduct.price,
       params: thisCartProduct.params,

@@ -172,24 +172,24 @@ section.menu {
     &:nth-of-type(6) {
       background-image: url(../../images/home-images/pizza-9.jpg);
     }
+  }
 
-    .icon {
-      opacity: 0;
-
-      .btn {
-        i {
-          color: $color-light;
-          position: relative;
-          font-size: 24px;
-          transition: all .3s;
+  .image_gallery .icon {
+    opacity: 0;
 
 
-          &:hover {
-            color: $color-main;
-          }
-        }
+    .btn i {
+      color: $color-light;
+      position: relative;
+      font-size: 24px;
+      transition: all .3s;
+
+
+      &:hover {
+        color: $color-main;
       }
     }
+
   }
 
   .image_gallery:hover {

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import {
   templates,
   select,
@@ -72,6 +73,7 @@ class Home {
 
   initWidgets() {
     const thisHome = this;
+    // eslint-disable-next-line no-unused-vars
     const flkty = new Flickity(thisHome.carousel, {
       // options
       cellAlign: 'left',
