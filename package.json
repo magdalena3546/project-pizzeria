@@ -49,6 +49,9 @@
     "dependencies": {
         "flickity": "^3.0.0",
         "json-server": "^0.17.0"
-    }
+    },
+    "engines": {
+        "npm": "16.14.2"
+      }
     
 }
