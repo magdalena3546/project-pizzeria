@@ -47,10 +47,8 @@
         "stylelint-scss": "^3.5.4"
     },
     "dependencies": {
+        "flickity": "^3.0.0",
         "json-server": "^0.17.0"
-    },
-    "engines":{
-        "node": "16.14.2"
-      } 
+    }
     
 }
