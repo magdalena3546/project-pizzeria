@@ -4,7 +4,7 @@ import {
   templates
 } from '../settings.js';
 import utils from '../utils.js';
-import AmountWidget from './AmountWidget.js';
+import AmountWidget from './amountWidget.js';
 
 class Product {
   constructor(id, data) {

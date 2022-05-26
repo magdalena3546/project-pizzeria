@@ -5,7 +5,7 @@ import {
   classNames
 } from '../settings.js';
 import utils from '../utils.js';
-import CartProduct from './CartProduct.js';
+import CartProduct from './cartProduct.js';
 
 class Cart {
   constructor(element) {

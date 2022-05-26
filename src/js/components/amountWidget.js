@@ -3,7 +3,7 @@ import {
   select
 } from '../settings.js';
 
-import BaseWidget from './BaseWidget.js';
+import BaseWidget from './baseWidget.js';
 
 class AmountWidget extends BaseWidget {
   constructor(element) {
