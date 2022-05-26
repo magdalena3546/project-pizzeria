@@ -92,7 +92,6 @@ class Booking {
     thisBooking.updateDOM();
   }
 
-
   makeBooked(date, hour, duration, table) {
     const thisBooking = this;
     if (typeof thisBooking.booked[date] == 'undefined') {
